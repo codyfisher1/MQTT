@@ -54,4 +54,4 @@ app.get('/history', function(req,res){
 })
 
 var PORT = process.env.PORT || 1337;
-app.listen(PORT,() => console.log('server started on 1337'));
+//app.listen(PORT,() => console.log('server started on 1337'));
