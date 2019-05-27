@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 var mqtt = require('mqtt')
-var MQTT_ADDR = "mqtt://localhost:8888";
+var MQTT_ADDR = "mqtt://192.168.11.2:8888";
 var client = mqtt.connect(MQTT_ADDR,{clientId: 'bgtestnodejs', protocolId: 'MQIsdp', protocolVersion: 3, connectTimeout:1000, debug:true})
 
 app.post('/publish', function(req,res){
